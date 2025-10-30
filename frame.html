@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Frame Galeri</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f9f9;
+            color: #333;
+            margin: 0;
+            text-align: center;
+        }
+        nav {
+            background-color: teal;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: yellow;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .item {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            width: 250px;
+            padding: 10px;
+        }
+        .item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .caption {
+            font-size: 14px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="list.html">Daftar Liburan</a>
+        <a href="table.html">Tabel Wisata</a>
+        <a href="frame.html">Frame Galeri</a>
+        <a href="iframe.html">Video Iframe</a>
+    </nav>
+
+    <h2>Galeri Liburan Saya 📸</h2>
+
+    <div class="gallery">
+        <div class="item">
+            <img src="bali.jpg" alt="Pantai Bali">
+            <p class="caption">Pemandangan Indah Di Pulau Bali</p>
+        </div>
+        <div class="item">
+            <img src="labuan.jpg" alt="Labuan Bajo">
+            <p class="caption">Pemandangan Pulau Padar di Labuan Bajo</p>
+        </div>
+        <div class="item">
+            <img src="borobudur.jpg" alt="Candi Borobudur">
+            <p class="caption">Keindahan Candi Borobudur di pagi hari</p>
+        </div>
+        <div class="item">
+            <img src="rajaampat.jpg" alt="Raja Ampat">
+            <p class="caption">Laut jernih dan karang indah di Raja Ampat</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>My Holiday</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f3f9f9;
+            color: #333;
+        }
+
+        /* === NAVIGATION === */
+        nav {
+            background-color: teal;
+            padding: 14px 40px;
+            position: relative; /* agar elemen kanan bisa diposisikan absolut */
+            text-align: center; /* menu tetap di tengah */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* menu utama (tengah) */
+        .nav-left a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            transition: 0.3s;
+        }
+
+        .nav-left a:hover {
+            color: yellow;
+        }
+
+        /* nama kanan */
+        .nav-right a.nama {
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: rgba(255,255,255,0.1);
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .nav-right a.nama:hover {
+            background-color: yellow;
+            color: teal;
+        }
+
+        /* === HERO SECTION === */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('home-back.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 70px 10px;
+        }
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+        }
+        header p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        header a {
+            background-color: yellow;
+            color: #333;
+            padding: 10px 25px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        header a:hover {
+            background-color: white;
+        }
+
+        /* === CONTENT SECTION === */
+        section {
+            padding: 10px;
+            text-align: center;
+        }
+        video {
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+        }
+
+        /* === FOOTER === */
+        footer {
+            background-color: teal;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Musik latar -->
+    <audio autoplay loop>
+        <source src="Aylex - Summer Sound (freetouse.com).mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Navigasi -->
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="list.html">Daftar Liburan</a>
+            <a href="table.html">Tabel Wisata</a>
+            <a href="frame.html">Frame Galeri</a>
+            <a href="iframe.html">Video Iframe</a>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="nama">Hanz Emmanuel</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Selamat Datang di My Holiday 🌅</h1>
+        <p>Temukan keindahan dan cerita liburanku di berbagai penjuru Indonesia!</p>
+        <a href="frame.html">Lihat Galeri</a>
+    </header>
+
+    <!-- Konten -->
+    <section>
+        <h2>Cuplikan Liburanku 🎥</h2>
+        <p>Berikut video singkat perjalanan liburanku di Bali dan Labuan Bajo.</p>
+        <video width="480" controls>
+            <source src="home vid.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 My Holiday | UTS Hanz Emmanuel - Pemrograman Web 1
+    </footer>
+
+</body>
+</html>
